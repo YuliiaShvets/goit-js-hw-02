@@ -2,8 +2,7 @@ function checkForSpam (message) {
     const blacklistworld1 = "spam";
     const blacklistworld2 = "sale";
     const string = message;
-    if (message = string.toLowerCase().includes(blacklistworld1)) {return "true"}
-    else if (message = string.toLowerCase().includes(blacklistworld2)) {return "true"}
+    if (string.toLowerCase().includes(blacklistworld1) || string.toLowerCase().includes(blacklistworld2)) {return true}
     else {return "false"}
 }
 
